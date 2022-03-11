@@ -2,16 +2,15 @@
   'f10'   : 'project-files:prj-toggle'
   'ctrl-p': 'project-files:pth-toggle'
 
-'.project-files.pth-list atom-text-editor[mini]':
-  'enter'        : 'pth-list:mode-4'
-  'alt-enter'    : 'pth-list:mode-5'
-  'ctrl-v'       : 'pth-list:mode-3'
-  'ctrl-r ctrl-v': 'pth-list:mode-3'
-  'ctrl-a ctrl-v': 'pth-list:mode-2'
-  'ctrl-p ctrl-v': 'pth-list:mode-1'
-  'ctrl-n ctrl-v': 'pth-list:mode-6'
-
 '.project-files.prj-list atom-text-editor[mini]':
-  'enter'      : 'prj-list:mode-1'
-  'alt-enter'  : 'prj-list:mode-2'
-  'shift-enter': 'prj-list:mode-3'
+  'enter'      : 'prj-list:open'
+  'alt-enter'  : 'prj-list:replace'
+  'shift-enter': 'prj-list:append'
+
+'.project-files.pth-list atom-text-editor[mini]':
+  'enter'    : 'pth-list:open-in'
+  'alt-enter': 'pth-list:open-ex'
+  'ctrl-r'   : 'pth-list:ins-r'
+  'ctrl-a'   : 'pth-list:ins-a'
+  'ctrl-p'   : 'pth-list:ins-p'
+  'ctrl-n'   : 'pth-list:ins-n'
