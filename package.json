@@ -20,11 +20,11 @@
     "glob": "^7.2.0"
   },
   "consumedServices": {
-  	"file-icons.element-icons": {
-  		"versions": {
-  			"1.0.0": "consumeElementIcons"
-  		}
-  	}
+    "file-icons.element-icons": {
+      "versions": {
+        "1.0.0": "consumeElementIcons"
+      }
+    }
   },
   "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
 }
