@@ -1,0 +1,30 @@
+{
+  "name": "project-files",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Browse the list of projects and files in a project",
+  "engines": {
+    "atom": ">=1.56.0 <2.0.0"
+  },
+  "keywords": [
+    "bacadra"
+  ],
+  "homepage": "https://github.com/bacadra/atom-project-files",
+  "url": "https://github.com/bacadra/atom-project-files",
+  "repository": "https://github.com/bacadra/atom-project-files",
+  "dependencies": {
+    "atom-select-list": "^0.8.1",
+    "cson": "^7.20.0",
+    "fuzzaldrin": "^2.1.0",
+    "fuzzaldrin-plus": "^0.6.0",
+    "glob": "^7.2.0"
+  },
+  "consumedServices": {
+  	"file-icons.element-icons": {
+  		"versions": {
+  			"1.0.0": "consumeElementIcons"
+  		}
+  	}
+  },
+  "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
+}

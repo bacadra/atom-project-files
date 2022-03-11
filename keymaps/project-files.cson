@@ -1,0 +1,13 @@
+'.project-files.path-list atom-text-editor[mini]':
+  'enter'        : 'path-list:mode-4'
+  'alt-enter'    : 'path-list:mode-5'
+  'ctrl-v'       : 'path-list:mode-3'
+  'ctrl-r ctrl-v': 'path-list:mode-3'
+  'ctrl-a ctrl-v': 'path-list:mode-2'
+  'ctrl-p ctrl-v': 'path-list:mode-1'
+  'ctrl-n ctrl-v': 'path-list:mode-6'
+
+'.project-files.proj-list atom-text-editor[mini]':
+  'enter'      : 'proj-list:mode-1'
+  'alt-enter'  : 'proj-list:mode-2'
+  'shift-enter': 'proj-list:mode-3'
