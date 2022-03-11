@@ -2,7 +2,7 @@
   "name": "project-files",
   "main": "./lib/main",
   "version": "0.0.0",
-  "description": "Browse the list of projects and files in a project",
+  "description": "The list of projects and files",
   "engines": {
     "atom": ">=1.56.0 <2.0.0"
   },
