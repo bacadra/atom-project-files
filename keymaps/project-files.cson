@@ -1,13 +1,17 @@
-'.project-files.path-list atom-text-editor[mini]':
-  'enter'        : 'path-list:mode-4'
-  'alt-enter'    : 'path-list:mode-5'
-  'ctrl-v'       : 'path-list:mode-3'
-  'ctrl-r ctrl-v': 'path-list:mode-3'
-  'ctrl-a ctrl-v': 'path-list:mode-2'
-  'ctrl-p ctrl-v': 'path-list:mode-1'
-  'ctrl-n ctrl-v': 'path-list:mode-6'
+'atom-workspace':
+  'f10'   : 'project-files:prj-toggle'
+  'ctrl-p': 'project-files:pth-toggle'
 
-'.project-files.proj-list atom-text-editor[mini]':
-  'enter'      : 'proj-list:mode-1'
-  'alt-enter'  : 'proj-list:mode-2'
-  'shift-enter': 'proj-list:mode-3'
+'.project-files.pth-list atom-text-editor[mini]':
+  'enter'        : 'pth-list:mode-4'
+  'alt-enter'    : 'pth-list:mode-5'
+  'ctrl-v'       : 'pth-list:mode-3'
+  'ctrl-r ctrl-v': 'pth-list:mode-3'
+  'ctrl-a ctrl-v': 'pth-list:mode-2'
+  'ctrl-p ctrl-v': 'pth-list:mode-1'
+  'ctrl-n ctrl-v': 'pth-list:mode-6'
+
+'.project-files.prj-list atom-text-editor[mini]':
+  'enter'      : 'prj-list:mode-1'
+  'alt-enter'  : 'prj-list:mode-2'
+  'shift-enter': 'prj-list:mode-3'
