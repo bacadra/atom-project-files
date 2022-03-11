@@ -10,7 +10,7 @@
 '.project-files.pth-list atom-text-editor[mini]':
   'enter'    : 'pth-list:open-in'
   'alt-enter': 'pth-list:open-ex'
-  'ctrl-r'   : 'pth-list:ins-r'
-  'ctrl-a'   : 'pth-list:ins-a'
   'ctrl-p'   : 'pth-list:ins-p'
+  'ctrl-a'   : 'pth-list:ins-a'
+  'ctrl-r'   : 'pth-list:ins-r'
   'ctrl-n'   : 'pth-list:ins-n'
