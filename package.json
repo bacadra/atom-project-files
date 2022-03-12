@@ -1,7 +1,7 @@
 {
   "name": "project-files",
   "main": "./lib/main",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The list of projects and files",
   "engines": {
     "atom": ">=1.56.0 <2.0.0"
@@ -25,9 +25,6 @@
       "project-files:prj-edit",
       "project-files:pth-toggle",
       "project-files:pth-recache"
-    ],
-    "atom-text-editor": [
-      "project-files:open-externally"
     ],
     "atom-text-editor": [
       "project-files:open-TeX-PDF-internally",
