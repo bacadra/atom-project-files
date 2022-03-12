@@ -19,6 +19,21 @@
     "fuzzaldrin-plus": "^0.6.0",
     "glob": "^7.2.0"
   },
+  "activationCommands": {
+    "atom-workspace": [
+      "project-files:prj-toggle",
+      "project-files:prj-edit",
+      "project-files:pth-toggle",
+      "project-files:pth-recache"
+    ],
+    "atom-text-editor": [
+      "project-files:open-externally"
+    ],
+    "atom-text-editor": [
+      "project-files:open-TeX-PDF-internally",
+      "project-files:open-TeX-PDF-externally"
+    ]
+  },
   "consumedServices": {
     "file-icons.element-icons": {
       "versions": {
