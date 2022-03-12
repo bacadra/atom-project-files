@@ -1,5 +1,8 @@
 # project-files
 
+Config options `Preserve last search` and `Use alternate scoring` are used from `command-palette` package.
+
+
 ## Project list
 
 The `Project List` is a window that makes it easier to navigate through projects. The project file is located in the atom configuration files under the name `project.cson`. The file must be a valid `.cson` file. The main file structure is a list of objects with the following keys:
