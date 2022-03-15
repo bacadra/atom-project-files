@@ -1,7 +1,7 @@
 {
   "name": "project-files",
   "main": "./lib/main",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "The list of projects and files",
   "engines": {
     "atom": ">=1.56.0 <2.0.0"
