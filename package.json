@@ -3,8 +3,13 @@
   "main": "./lib/main",
   "version": "0.0.7",
   "description": "The list of projects and files",
-  "engines": {
-    "atom": ">=1.56.0 <2.0.0"
+  "dependencies": {
+    "atom-select-list": "^0.8.1",
+    "cson": "^7.20.0",
+    "fuzzaldrin": "^2.1.0",
+    "fuzzaldrin-plus": "^0.6.0",
+    "glob": "^7.2.0",
+    "minimatch": "^5.0.1"
   },
   "keywords": [
     "bacadra",
@@ -13,34 +18,33 @@
     "project",
     "path",
     "fuzzy",
-    "finder"
+    "finder",
+    "autocomplete"
   ],
   "homepage": "https://github.com/bacadra/atom-project-files",
   "url": "https://github.com/bacadra/atom-project-files",
   "repository": "https://github.com/bacadra/atom-project-files",
-  "dependencies": {
-    "atom-select-list": "^0.8.1",
-    "cson": "^7.20.0",
-    "fuzzaldrin": "^2.1.0",
-    "fuzzaldrin-plus": "^0.6.0",
-    "glob": "^7.2.0"
-  },
-  "activationCommands": {
-    "atom-workspace": [
-      "project-files:prj-toggle",
-      "project-files:prj-edit",
-      "project-files:pth-toggle",
-      "project-files:pth-recache"
-    ],
-    "atom-text-editor": [
-      "project-files:open-TeX-PDF-internally",
-      "project-files:open-TeX-PDF-externally"
-    ]
-  },
   "consumedServices": {
     "file-icons.element-icons": {
       "versions": {
         "1.0.0": "consumeElementIcons"
+      }
+    },
+    "atom.file-icons": {
+      "versions": {
+        "1.0.0": "consumeClassIcons"
+      }
+    },
+    "tree-view": {
+      "versions": {
+        "^1.0.0": "consumeTreeView"
+      }
+    }
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "4.0.0": "getProvider"
       }
     }
   },

@@ -1,14 +1,16 @@
 # project-files
 
-Config options `Preserve last search` and `Use alternate scoring` are used from `command-palette` package.
+Config options `Preserve last search` and `Use alternate scoring` are used from `command-palette` package. The ignores are used from `core.ignoredNames`, `fuzzy-finder.ignoredNames` and `project-files.ignoredNames`.
 
 
 ## Project list
 
-The `Project List` is a window that makes it easier to navigate through projects. The project file is located in the atom configuration files under the name `project.cson`. The file must be a valid `.cson` file. The main file structure is a list of objects with the following keys:
+![project-list](assets/project-list.png)
+
+The Project list is a window that makes it easier to navigate through projects. The project file is located in the Atom configuration files under the name `project.cson`. The file must be a valid `.cson` file. The main file structure is a list of objects with the following keys:
 
 * `group`: [string] name of the group the project is associated with
-* `title`: [string] nazwa projektu
+* `title`: [string] name of the project
 * `paths`: [list with strings] list of paths which describe the project
 * `subsQ`: [bool] (optional) flag, possibility to include subfolders as projects
 
@@ -19,15 +21,15 @@ Example of `project.cson`:
         group: "bacadra"
         title: "py-bacadra"
         paths: [
-          "c:\\bacadra\\"
+          "c:/bacadra/"
         ]
       }
       {
         group: "projects"
         title: "projects"
         paths: [
-          "c:\\projects\\"
-          "d:\\projects\\"
+          "c:/projects/"
+          "d:/projects/"
         ],
         subsQ: true
       }
@@ -35,7 +37,7 @@ Example of `project.cson`:
         group: "projects"
         title: "samples"
         paths: [
-          "c:\\samples\\"
+          "c:/samples/"
         ]
       }
     ]
@@ -43,34 +45,56 @@ Example of `project.cson`:
 
 In `atom-workspace` space there are available commands:
 
-* `project-files:prj-toggle`: (default `F10`) open projects list
-* `project-files:prj-edit`: edit project list in atom
+* `project-files:projects-toggle`: (default `F10`) open projects list
+* `project-files:projects-edit`: edit project list in Atom
+* `project-files:projects-cache`: manually cache to projects
 
+In `project-list` view there are available keymap:
 
-In `prj-list-view` view there are available keymap:
-
-* `enter`: open new window with selected project
-* `alt-enter`: close active window and open new with selected project
-* `shift-enter`: append selected project to projects in active window
+* `Enter`: open new window with selected project
+* `Alt-Enter`: close active window and open new with selected project
+* `Shift-Enter`: append selected project to projects in active window
 
 
 ## Path list
 
-The `Path list` is a window for navigating through files in open projects. It allows you to open a file inside the atom editor, externally, and to insert a file path in various variants.
+![path-list](assets/path-list.png)
+
+The Path list is a window for navigating through files in open projects. It allows you to open a file inside the Atom editor, externally, and to insert a file path in various variants.
 
 In `atom-workspace` space there are available commands:
 
-* `project-files:pth-toggle`: (default `ctrl-P`) open path list
-* `project-files:pth-recache`: recache files
+* `project-files:paths-toggle`: (default `ctrl-P`) open path list
+* `project-files:paths-cache`: manually cache the file
 
-In `pth-list-view` view there are available keymap:
+In `path-list` view there are available keymap:
 
-* `enter`: open selected file in atom
-* `alt-enter`: open selected file externally
-* `ctrl-p`: insert project path of selected file
-* `ctrl-a`: insert absolute path of selected file
-* `ctrl-r`: insert relative path of selected file to opened file
-* `ctrl-n`: insert name of selected file
+* `Enter`: open selected file in Atom
+* `Alt-Enter`: open selected file externally
+* `Ctrl-P`: insert project path of selected file
+* `Ctrl-A`: insert absolute path of selected file
+* `Ctrl-R`: insert relative path of selected file to opened file
+* `Ctrl-N`: insert name of selected file
+
+
+## Autocomplete paths
+
+![autocomplete-paths](assets/autocomplete-paths.png)
+
+This package provides file path hinting options for the Autocomplete package. The paths are displayed relative to the currently active text editor, and the tooltip shows the full file path in the description.
+
+To use a package, type `///` followed by a command that will be filtered with fuzzy-finder.
+
+[autocomplete-plus](https://atom.io/packages/autocomplete-plus) required.
+
+
+## Tree-view assistance
+
+![tree-view-externally](assets/tree-view-externally.png)
+
+In `.tree-view` space there are available commands:
+
+* `project-files:open-externally`: open active item externally
 
 
 ## Editor assistance
@@ -84,5 +108,12 @@ In `atom-text-editor` space there are available commands:
 
 In `atom-text-editor[data-grammar~="latex"]` space there are available commands:
 
-* `project-files:open-TeX-PDF-internally`: open associate `.pdf` file in atom
-* `project-files:open-TeX-PDF-externally`: open associate `.pdf` file externally
+* `project-files:open-TeX-PDF-internally`: open `.tex` associate `.pdf` file
+* `project-files:open-TeX-PDF-externally`: open `.tex` associate `.pdf` file externally
+
+
+## Icon support
+
+The `autocomplete-paths` and `path-list` can display icon of file/directory.
+
+[file-icons](https://atom.io/packages/file-icons) required.
