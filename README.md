@@ -5,7 +5,7 @@ Config options `Preserve last search` and `Use alternate scoring` are used from 
 
 ## Project list
 
-![project-list](assets/project-list.png)
+![project-list](https://github.com/bacadra/atom-project-files/raw/master/assets/project-list.png)
 
 The Project list is a window that makes it easier to navigate through projects. The project file is located in the Atom configuration files under the name `project.cson`. The file must be a valid `.cson` file. The main file structure is a list of objects with the following keys:
 
@@ -58,7 +58,7 @@ In `project-list` view there are available keymap:
 
 ## Path list
 
-![path-list](assets/path-list.png)
+![path-list](https://github.com/bacadra/atom-project-files/raw/master/assets/path-list.png)
 
 The Path list is a window for navigating through files in open projects. It allows you to open a file inside the Atom editor, externally, and to insert a file path in various variants.
 
@@ -79,7 +79,7 @@ In `path-list` view there are available keymap:
 
 ## Autocomplete paths
 
-![autocomplete-paths](assets/autocomplete-paths.png)
+![autocomplete-paths](https://github.com/bacadra/atom-project-files/raw/master/assets/autocomplete-paths.png)
 
 This package provides file path hinting options for the Autocomplete package. The paths are displayed relative to the currently active text editor, and the tooltip shows the full file path in the description.
 
@@ -90,7 +90,7 @@ To use a package, type `///` followed by a command that will be filtered with fu
 
 ## Tree-view assistance
 
-![tree-view-externally](assets/tree-view-externally.png)
+![tree-view-externally](https://github.com/bacadra/atom-project-files/raw/master/assets/tree-view-externally.png)
 
 In `.tree-view` space there are available commands:
 
