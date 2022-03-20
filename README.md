@@ -80,6 +80,8 @@ In `path-list` view there are available keymap:
 
 * `Enter`: open selected file in Atom
 * `Alt-Enter`: open selected file externally
+* `Ctrl-Enter`: show the given file in a file manager
+* `Alt-Delete`: moves a path to the OS-specific trash location
 * `Alt-Left`: open selected file by split left
 * `Alt-Right`: open selected file by split right
 * `Alt-Up`: open selected file by split up
