@@ -48,5 +48,25 @@
       }
     }
   },
+  "activationCommands": {
+    "atom-workspace": [
+      "project-files:paths-toggle",
+      "project-files:paths-cache",
+      "project-files:projects-toggle",
+      "project-files:projects-cache",
+      "project-files:projects-edit",
+      "project-files:recent-toggle"
+    ],
+    "atom-text-editor": [
+      "project-files:open-externally"
+    ],
+    "atom-text-editor[data-grammar~=latex]": [
+      "project-files:open-TeX-PDF-internally",
+      "project-files:open-TeX-PDF-externally"
+    ],
+    ".tree-view": [
+      "project-files:open-externally"
+    ]
+  },
   "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
 }

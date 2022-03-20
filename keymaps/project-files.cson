@@ -1,6 +1,7 @@
 'atom-workspace':
-  'f10'   : 'project-files:projects-toggle'
-  'ctrl-p': 'project-files:paths-toggle'
+  'f10'    : 'project-files:projects-toggle'
+  'alt-f10': 'project-files:recent-toggle'
+  'ctrl-p' : 'project-files:paths-toggle'
 
 '.tree-view':
   'f9' : 'project-files:open-externally'
@@ -11,9 +12,16 @@
   'shift-enter': 'project-list:append'
 
 '.project-files.path-list atom-text-editor[mini]':
-  'enter'     : 'path-list:opin'
-  'alt-enter' : 'path-list:opex'
-  'ctrl-p'    : 'path-list:insp'
-  'ctrl-a'    : 'path-list:insa'
-  'ctrl-r'    : 'path-list:insr'
-  'ctrl-n'    : 'path-list:insn'
+  'enter'     : 'path-list:open-in'
+  'alt-enter' : 'path-list:open-ex'
+  'ctrl-p'    : 'path-list:insert-p'
+  'ctrl-a'    : 'path-list:insert-a'
+  'ctrl-r'    : 'path-list:insert-r'
+  'ctrl-n'    : 'path-list:insert-n'
+  'alt-0'     : 'path-list:default-slash'
+  'alt-/'     : 'path-list:forward-slash'
+  'alt-\\'    : 'path-list:backslash'
+  'alt-left'  : 'path-list:split-left'
+  'alt-right' : 'path-list:split-right'
+  'alt-up'    : 'path-list:split-up'
+  'alt-down'  : 'path-list:split-down'

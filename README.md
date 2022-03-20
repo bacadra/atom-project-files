@@ -7,37 +7,45 @@ Config options `Preserve last search` and `Use alternate scoring` are used from 
 
 ![project-list](https://github.com/bacadra/atom-project-files/raw/master/assets/project-list.png)
 
+![recent-list](https://github.com/bacadra/atom-project-files/raw/master/assets/recent-list.png)
+
 The Project list is a window that makes it easier to navigate through projects. The project file is located in the Atom configuration files under the name `project.cson`. The file must be a valid `.cson` file. The main file structure is a list of objects with the following keys:
 
-* `group`: [string] name of the group the project is associated with
 * `title`: [string] name of the project
 * `paths`: [list with strings] list of paths which describe the project
+* `tags`: [list with strings] (optional) the project tags
 * `subsQ`: [bool] (optional) flag, possibility to include subfolders as projects
 
 Example of `project.cson`:
 
     [
       {
-        group: "bacadra"
         title: "py-bacadra"
         paths: [
           "c:/bacadra/"
         ]
+        tags: [
+          "bacadra"
+        ]
       }
       {
-        group: "projects"
         title: "projects"
         paths: [
           "c:/projects/"
           "d:/projects/"
         ],
+        tags: [
+          "projects"
+        ]
         subsQ: true
       }
       {
-        group: "projects"
         title: "samples"
         paths: [
           "c:/samples/"
+        ]
+        tags: [
+          "projects"
         ]
       }
     ]
@@ -48,6 +56,7 @@ In `atom-workspace` space there are available commands:
 * `project-files:projects-toggle`: (default `F10`) open projects list
 * `project-files:projects-edit`: edit project list in Atom
 * `project-files:projects-cache`: manually cache to projects
+* `project-files:recent-toggle`: (default `Alt+F10`) open recent projects
 
 In `project-list` view there are available keymap:
 
@@ -71,10 +80,17 @@ In `path-list` view there are available keymap:
 
 * `Enter`: open selected file in Atom
 * `Alt-Enter`: open selected file externally
+* `Alt-Left`: open selected file by split left
+* `Alt-Right`: open selected file by split right
+* `Alt-Up`: open selected file by split up
+* `Alt-Down`: open selected file by split down
 * `Ctrl-P`: insert project path of selected file
 * `Ctrl-A`: insert absolute path of selected file
 * `Ctrl-R`: insert relative path of selected file to opened file
 * `Ctrl-N`: insert name of selected file
+* `Alt-0`: change separator in insert to system default
+* `Alt-\`: change separator in insert to `\`
+* `Alt-/`: change separator in insert to `/`
 
 
 ## Autocomplete paths
