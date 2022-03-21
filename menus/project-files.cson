@@ -18,10 +18,4 @@
       }
     ]
   }
-  # {
-  #   'label': 'File'
-  #   'submenu': [
-  #     { 'label': 'Projects...', 'command': 'project-files:projects-edit'}
-  #   ]
-  # }
 ]
