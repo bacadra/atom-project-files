@@ -37,4 +37,5 @@
   'alt-0' : 'path-list:default-slash'
   'alt-/' : 'path-list:forward-slash'
   'alt-\\': 'path-list:backslash'
-  'alt-q' : 'path-list:update-query'
+  'alt-q' : 'path-list:query-item'
+  'alt-s' : 'path-list:query-selection'

@@ -97,7 +97,8 @@ In `path-list` view there are available keymap:
 * `Alt-0`: change separator in insert to system default (do not hide view)
 * `Alt-\`: change separator in insert to `\` (do not hide view)
 * `Alt-/`: change separator in insert to `/` (do not hide view)
-* `Alt-Q`: change quary to project file of selected item (do not hide view)
+* `Alt-Q`: change query to project file path of selected item (do not hide view)
+* `Alt-S`: change query to selection (do not hide view)
 
 
 ## Autocomplete paths
