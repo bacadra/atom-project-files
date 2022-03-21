@@ -1,6 +1,6 @@
 # project-files
 
-Config options `Preserve last search` and `Use alternate scoring` are used from `command-palette` package. The ignores are used from `core.ignoredNames`, `fuzzy-finder.ignoredNames` and `project-files.ignoredNames`.
+**A suite of multiple project or file list management applications.**
 
 
 ## Project list
@@ -9,7 +9,7 @@ Config options `Preserve last search` and `Use alternate scoring` are used from 
 
 ![recent-list](https://github.com/bacadra/atom-project-files/raw/master/assets/recent-list.png)
 
-The Project list is a window that makes it easier to navigate through projects. The project file is located in the Atom configuration files under the name `project.cson`. The file must be a valid `.cson` file. The main file structure is a list of objects with the following keys:
+The Project list is a window that makes it easier to navigate through projects. The project file is located in the Atom configuration files under the name `project.cson`. The file must be a valid `.cson` file. When searching, you can score tags via #tag. The main file structure is a list of objects with the following keys:
 
 * `title`: [string] name of the project
 * `paths`: [list with strings] list of paths which describe the project
@@ -86,22 +86,29 @@ In `path-list` view there are available keymap:
 * `Alt-Right`: open selected file by split right
 * `Alt-Up`: open selected file by split up
 * `Alt-Down`: open selected file by split down
-* `Ctrl-P`: insert project path of selected file
-* `Ctrl-A`: insert absolute path of selected file
-* `Ctrl-R`: insert relative path of selected file to opened file
-* `Ctrl-N`: insert name of selected file
+* `Ctrl-V Ctrl-P`: insert project path of selected file
+* `Ctrl-V Ctrl-A`: insert absolute path of selected file
+* `Ctrl-V Ctrl-R`: insert relative path of selected file to opened file
+* `Ctrl-V Ctrl-N`: insert name of selected file
+* `Ctrl-C Ctrl-P`: copy project path of selected file
+* `Ctrl-C Ctrl-A`: copy absolute path of selected file
+* `Ctrl-C Ctrl-R`: copy relative path of selected file to opened file
+* `Ctrl-C Ctrl-N`: copy name of selected file
 * `Alt-0`: change separator in insert to system default
 * `Alt-\`: change separator in insert to `\`
 * `Alt-/`: change separator in insert to `/`
+* `Ctrl-R`: change quary to project file of selected item
 
 
 ## Autocomplete paths
 
 ![autocomplete-paths](https://github.com/bacadra/atom-project-files/raw/master/assets/autocomplete-paths.png)
 
-This package provides file path hinting options for the Autocomplete package. The paths are displayed relative to the currently active text editor, and the tooltip shows the full file path in the description.
+This package provides file path hinting options for the Autocomplete package. The paths are displayed relative to the currently active text editor, and the tooltip shows the full file path in the description. This package base on the cache, which can be build manually or by Path List view.
 
 To use a package, type `///` followed by a command that will be filtered with fuzzy-finder.
+
+This functionality can be enabled or disabled in the package settings.
 
 [autocomplete-plus](https://atom.io/packages/autocomplete-plus) required.
 
@@ -112,7 +119,8 @@ To use a package, type `///` followed by a command that will be filtered with fu
 
 In `.tree-view` space there are available commands:
 
-* `project-files:open-externally`: open active item externally
+* `project-files:open-externally`: (default `F9`) open active item externally
+* `project-files:show-in-folder`: show active item in system default file manager
 
 
 ## Editor assistance
@@ -120,6 +128,7 @@ In `.tree-view` space there are available commands:
 In `atom-text-editor` space there are available commands:
 
 * `project-files:open-externally`: open active file externally
+* `project-files:show-in-folder`: show active file in system default file manager
 
 
 ## TeX assistance
@@ -130,8 +139,8 @@ In `atom-text-editor[data-grammar~="latex"]` space there are available commands:
 * `project-files:open-TeX-PDF-externally`: open `.tex` associate `.pdf` file externally
 
 
-## Icon support
+## Config
 
-The `autocomplete-paths` and `path-list` can display icon of file/directory.
+Config options `Preserve last search` and `Use alternate scoring` are used from `command-palette` package. The ignores are used from `core.ignoredNames`, `fuzzy-finder.ignoredNames` and `project-files.ignoredNames`.
 
-[file-icons](https://atom.io/packages/file-icons) required.
+The `autocomplete-paths` and `path-list` can display icon of file/directory. [file-icons](https://atom.io/packages/file-icons) required.

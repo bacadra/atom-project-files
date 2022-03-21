@@ -58,14 +58,16 @@
       "project-files:recent-toggle"
     ],
     "atom-text-editor": [
-      "project-files:open-externally"
+      "project-files:open-externally",
+      "project-files:show-in-folder"
     ],
     "atom-text-editor[data-grammar~=latex]": [
       "project-files:open-TeX-PDF-internally",
       "project-files:open-TeX-PDF-externally"
     ],
     ".tree-view": [
-      "project-files:open-externally"
+      "project-files:open-externally",
+      "project-files:show-in-folder"
     ]
   },
   "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"

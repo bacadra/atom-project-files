@@ -5,3 +5,23 @@
   '.tree-view .directory': [
     {'label': 'Open Externally', 'command': 'project-files:open-externally'}
   ]
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      {
+        'label': 'Project Files'
+        'submenu': [
+            {'label': 'Projects...', 'command': 'project-files:projects-edit'}
+        ]
+      }
+    ]
+  }
+  # {
+  #   'label': 'File'
+  #   'submenu': [
+  #     { 'label': 'Projects...', 'command': 'project-files:projects-edit'}
+  #   ]
+  # }
+]
