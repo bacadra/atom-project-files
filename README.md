@@ -88,11 +88,11 @@ In `path-list` view there are available keymap:
 * `Alt-Down`: open selected file by split down
 * `Alt-V Alt-P`: insert project path of selected file
 * `Alt-V Alt-A`: insert absolute path of selected file
-* `Alt-V Alt-R`: insert relative path of selected file to opened file
+* `Alt-V Alt-R` or `Alt-V`: insert relative path of selected file to opened file
 * `Alt-V Alt-N`: insert name of selected file
 * `Alt-C Alt-P`: copy project path of selected file
 * `Alt-C Alt-A`: copy absolute path of selected file
-* `Alt-C Alt-R`: copy relative path of selected file to opened file
+* `Alt-C Alt-R` or `Alt-C`: copy relative path of selected file to opened file
 * `Alt-C Alt-N`: copy name of selected file
 * `Alt-0`: change separator in insert to system default (do not hide view)
 * `Alt-\`: change separator in insert to `\` (do not hide view)
