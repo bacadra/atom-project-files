@@ -19,7 +19,10 @@
     "path",
     "fuzzy",
     "finder",
-    "autocomplete"
+    "autocomplete",
+    "unsupported",
+    "opener",
+    "external"
   ],
   "homepage": "https://github.com/bacadra/atom-project-files",
   "url": "https://github.com/bacadra/atom-project-files",
@@ -55,7 +58,8 @@
       "project-files:projects-toggle",
       "project-files:projects-cache",
       "project-files:projects-edit",
-      "project-files:recent-toggle"
+      "project-files:recent-toggle",
+      "project-files:toggle-unsupported-flag"
     ],
     "atom-text-editor": [
       "project-files:open-externally",
