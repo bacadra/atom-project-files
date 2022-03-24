@@ -114,43 +114,6 @@ This functionality can be enabled or disabled in the package settings.
 [autocomplete-plus](https://atom.io/packages/autocomplete-plus) required.
 
 
-## External opener
-
-![external-opened](https://github.com/bacadra/atom-project-files/raw/master/assets/external-opener.png)
-
-Many files cannot be displayed in human-readable form and the corresponding Atom editor plugins do not exist. In this case, the most convenient form of exploring file resources is to open it in an external editor.
-
-In `atom-workspace` space there are available commands:
-
-* `project-files:toggle-unsupported-flag`: (default `Alt-U`) quick switch of external opener state
-
-
-## Editor assistance
-
-In `atom-text-editor` space there are available commands:
-
-* `project-files:open-externally`: (default `Alt-F12`) open active file externally
-* `project-files:show-in-folder`: (defualt `Ctrl-F12`) show active file in system default file manager
-
-
-## Tree-view assistance
-
-![tree-view-externally](https://github.com/bacadra/atom-project-files/raw/master/assets/tree-view-externally.png)
-
-In `.tree-view` space there are available commands:
-
-* `project-files:open-externally`: (default `F9`) open active item externally
-* `project-files:show-in-folder`: show active item in system default file manager
-
-
-## TeX assistance
-
-In `atom-text-editor[data-grammar~="latex"]` space there are available commands:
-
-* `project-files:open-TeX-PDF-internally`: open `.tex` associate `.pdf` file
-* `project-files:open-TeX-PDF-externally`: open `.tex` associate `.pdf` file externally
-
-
 ## Config
 
 Config options `Preserve last search` and `Use alternate scoring` are used from `command-palette` package. The ignores are used from `core.ignoredNames`, `fuzzy-finder.ignoredNames` and `project-files.ignoredNames`.

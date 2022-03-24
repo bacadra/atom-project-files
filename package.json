@@ -19,10 +19,7 @@
     "path",
     "fuzzy",
     "finder",
-    "autocomplete",
-    "unsupported",
-    "opener",
-    "external"
+    "autocomplete"
   ],
   "homepage": "https://github.com/bacadra/atom-project-files",
   "url": "https://github.com/bacadra/atom-project-files",
@@ -36,11 +33,6 @@
     "atom.file-icons": {
       "versions": {
         "1.0.0": "consumeClassIcons"
-      }
-    },
-    "tree-view": {
-      "versions": {
-        "^1.0.0": "consumeTreeView"
       }
     }
   },
@@ -58,20 +50,7 @@
       "project-files:projects-toggle",
       "project-files:projects-cache",
       "project-files:projects-edit",
-      "project-files:recent-toggle",
-      "project-files:toggle-unsupported-flag"
-    ],
-    "atom-text-editor": [
-      "project-files:open-externally",
-      "project-files:show-in-folder"
-    ],
-    "atom-text-editor[data-grammar~=latex]": [
-      "project-files:open-TeX-PDF-internally",
-      "project-files:open-TeX-PDF-externally"
-    ],
-    ".tree-view": [
-      "project-files:open-externally",
-      "project-files:show-in-folder"
+      "project-files:recent-toggle"
     ]
   },
   "license": "GPL-3.0-or-later"

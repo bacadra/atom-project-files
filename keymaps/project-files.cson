@@ -1,13 +1,7 @@
 'atom-workspace':
   'f10'     : 'project-files:projects-toggle'
   'alt-f10' : 'project-files:recent-toggle'
-  'alt-f12' : 'project-files:open-externally'
-  'ctrl-f12': 'project-files:show-in-folder'
   'ctrl-p'  : 'project-files:paths-toggle'
-  'alt-u'   : 'project-files:toggle-unsupported-flag'
-
-'.tree-view':
-  'f9' : 'project-files:open-externally'
 
 '.project-files.project-list atom-text-editor[mini], .project-files.recent-list atom-text-editor[mini]':
   'enter'      : 'project-list:open'
