@@ -7,6 +7,7 @@
   'enter'      : 'project-list:open'
   'alt-enter'  : 'project-list:swap'
   'shift-enter': 'project-list:append'
+  'alt-v'      : 'project-list:paths'
 
 '.project-files.path-list atom-text-editor[mini]':
   'enter'     : 'path-list:open'
