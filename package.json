@@ -6,10 +6,9 @@
   "dependencies": {
     "atom-select-list": "^0.8.1",
     "cson": "^7.20.0",
-    "fuzzaldrin": "^2.1.0",
-    "fuzzaldrin-plus": "^0.6.0",
     "glob": "^7.2.0",
-    "minimatch": "^5.0.1"
+    "minimatch": "^5.0.1",
+    "zadeh": "^3.0.0-beta.4"
   },
   "keywords": [
     "bacadra",
